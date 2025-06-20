@@ -1,0 +1,108 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(168, 168, 168);
+    flex: 1;
+}
+
+.categoryNav {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.categoryBtn {
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: none;
+    text-transform: capitalize;
+}
+
+.categoryBtn.selected {
+    background-color: rgb(143, 121, 0);
+}
+
+.itemContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,350px);
+    gap: 1rem;
+}
+
+.itemCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    max-height: 550px;
+    box-shadow: 0px 0px 6px 4px rgb(0,0,0,0.15);
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.cardImg {
+    height: 50%;
+    width: 100%;
+    border-radius: 1rem;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardImg img {
+    min-width: 10%;
+    min-height: 100%;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.itemTitle {
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.itemPrice {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.cardMisc {
+    justify-self: center;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.addCartBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background: rgb(240,240,240);
+    border-radius: 1rem;
+    border: none;
+}
+
+.addCartBtn svg {
+    margin: 0;
+    fill: darkgreen;
+    height: 24px;
+}
+.addCartBtn svg:active {
+    opacity: 0.8;
+}
+
+.itemRatings {
+    font-weight: 300;
+}
